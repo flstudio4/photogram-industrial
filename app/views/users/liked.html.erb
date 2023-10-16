@@ -1,10 +1,13 @@
 <div class="row">
   <div class="col md-6 offset-3">
-    <h1><%= @user.username %></h1>
+    <h1>
+      <%= @user.username %>
+    </h1>
+
     <%= render partial: "shared/tabs" %>
   </div>
 </div>
 
-<% @user.own_photos.each do |photo| %>
+<% @user.liked_photos.each do |photo| %>
   <%= render "photos/photo", photo: photo %>
 <% end %>
