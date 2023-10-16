@@ -1,0 +1,12 @@
+<h1>Following</h1>
+<div class="row">
+  <div class="col md-6 offset-3">
+<%= render partial: "shared/tabs" %>
+</div>
+</div>
+<ul class="list-group">
+<% @user.leaders.each do |follow| %>
+
+  <li class="list-group-item"><%= follow.username %></li>
+<% end %>
+</ul>
