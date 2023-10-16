@@ -7,6 +7,7 @@ task sample_data: :environment do
     Photo.destroy_all
     User.destroy_all
   end
+  # already fixed the flaw
   names = ["Alice", "Anna", "Bob", "Mary", "Lucy", "Kat", "Cindy", "Mindy", "Lisa", "Adam", "Jerry", "Dylan"]
 
   names.each do |name|
